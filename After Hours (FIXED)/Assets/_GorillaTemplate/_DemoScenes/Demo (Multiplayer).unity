@@ -15549,9 +15549,7 @@ MonoBehaviour:
   LeftController: 1
   tagSounds:
   - tag: Marble
-    sounds:
-    - {fileID: 8300000, guid: f957e1a41ac212b44b99af331459b90a, type: 3}
-    - {fileID: 8300000, guid: 3349434e5ffeeb841af42a74286d61b5, type: 3}
+    sounds: []
 --- !u!114 &1882709448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17731,9 +17729,7 @@ MonoBehaviour:
   LeftController: 0
   tagSounds:
   - tag: Marble
-    sounds:
-    - {fileID: 8300000, guid: f957e1a41ac212b44b99af331459b90a, type: 3}
-    - {fileID: 8300000, guid: 3349434e5ffeeb841af42a74286d61b5, type: 3}
+    sounds: []
 --- !u!114 &2142146351
 MonoBehaviour:
   m_ObjectHideFlags: 0
