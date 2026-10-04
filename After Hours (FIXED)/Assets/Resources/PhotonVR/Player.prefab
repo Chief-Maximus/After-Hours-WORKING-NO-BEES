@@ -228,7 +228,8 @@ GameObject:
   - component: {fileID: 6656069275511001013}
   - component: {fileID: 8666263093632836160}
   - component: {fileID: 1060129648280679432}
-  m_Layer: 0
+  - component: {fileID: 5996600733582205265}
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,6 +395,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 8666263093632836160}
   m_maskType: 0
+--- !u!114 &5996600733582205265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228723478001943549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &294052880799332764
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +939,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.1
+  m_Stiffness: 0.995
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
@@ -2093,7 +2108,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8164249267003835463}
-  - component: {fileID: 1223103708164869010}
   m_Layer: 0
   m_Name: body_stripe_3
   m_TagString: Untagged
@@ -2117,76 +2131,6 @@ Transform:
   - {fileID: 2575514938145370611}
   m_Father: {fileID: 4738792251252382257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1223103708164869010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3296369490821787428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ac8d30c6a0d9642a11e5be4c440740, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Root: {fileID: 8164249267003835463}
-  m_Roots: []
-  m_UpdateRate: 60
-  m_UpdateMode: 3
-  m_Damping: 0.1
-  m_DampingDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Elasticity: 0.1
-  m_ElasticityDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Stiffness: 0.1
-  m_StiffnessDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Inert: 0
-  m_InertDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Friction: 0
-  m_FrictionDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Radius: 0
-  m_RadiusDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_EndLength: 0
-  m_EndOffset: {x: 0, y: 0, z: 0}
-  m_Gravity: {x: 0, y: 0, z: 0}
-  m_Force: {x: 0, y: 0, z: 0}
-  m_BlendWeight: 1
-  m_Colliders: []
-  m_Exclusions: []
-  m_FreezeAxis: 0
-  m_DistantDisable: 0
-  m_ReferenceObject: {fileID: 0}
-  m_DistanceToObject: 20
-  m_Multithread: 1
 --- !u!1 &3549531868188732924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,7 +2173,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6720545175658806351}
   - component: {fileID: 2812695040551017003}
-  m_Layer: 0
+  - component: {fileID: 8346237664052350920}
+  m_Layer: 9
   m_Name: Head_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2353,6 +2298,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0026157498, y: 3.6067574, z: 0.036633015}
     m_Extent: {x: 1.8178732, y: 1.1313303, z: 1.0674266}
   m_DirtyAABB: 0
+--- !u!114 &8346237664052350920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3622513017239172586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &3865901265433884978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,7 +3595,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_Stiffness: 0.1
+  m_Stiffness: 0.995
   m_StiffnessDistrib:
     serializedVersion: 2
     m_Curve: []
@@ -5227,7 +5186,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6343278860334670108}
-  - component: {fileID: 6192445289632988728}
   m_Layer: 0
   m_Name: body_stripe_7
   m_TagString: Untagged
@@ -5251,76 +5209,6 @@ Transform:
   - {fileID: 6767002131038122878}
   m_Father: {fileID: 8044969069404759044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6192445289632988728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8662444594634973795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ac8d30c6a0d9642a11e5be4c440740, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Root: {fileID: 6343278860334670108}
-  m_Roots: []
-  m_UpdateRate: 60
-  m_UpdateMode: 3
-  m_Damping: 0.1
-  m_DampingDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Elasticity: 0.1
-  m_ElasticityDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Stiffness: 0.1
-  m_StiffnessDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Inert: 0
-  m_InertDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Friction: 0
-  m_FrictionDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_Radius: 0
-  m_RadiusDistrib:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_EndLength: 0
-  m_EndOffset: {x: 0, y: 0, z: 0}
-  m_Gravity: {x: 0, y: 0, z: 0}
-  m_Force: {x: 0, y: 0, z: 0}
-  m_BlendWeight: 1
-  m_Colliders: []
-  m_Exclusions: []
-  m_FreezeAxis: 0
-  m_DistantDisable: 0
-  m_ReferenceObject: {fileID: 0}
-  m_DistanceToObject: 20
-  m_Multithread: 1
 --- !u!1 &8755671301361287521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5459,7 +5347,8 @@ GameObject:
   - component: {fileID: 6558396022955975578}
   - component: {fileID: 4000636115358005322}
   - component: {fileID: 7163501019272150747}
-  m_Layer: 0
+  - component: {fileID: 1984961019494637295}
+  m_Layer: 9
   m_Name: Head_Stripe_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5534,6 +5423,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1984961019494637295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8938212538694351144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &8988482857172039719
 GameObject:
   m_ObjectHideFlags: 0
