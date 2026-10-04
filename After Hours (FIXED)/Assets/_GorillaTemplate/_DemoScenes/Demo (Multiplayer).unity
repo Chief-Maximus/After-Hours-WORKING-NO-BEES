@@ -24643,9 +24643,17 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1244462270}
+    - target: {fileID: 6448659860880152904, guid: 5788b1efe01208143a41475cd8a762c4, type: 3}
+      propertyPath: m_AutoFindParentInteractableInHierarchy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6605641466867944857, guid: 5788b1efe01208143a41475cd8a762c4, type: 3}
       propertyPath: sceneViewId
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867147749013216459, guid: 5788b1efe01208143a41475cd8a762c4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
