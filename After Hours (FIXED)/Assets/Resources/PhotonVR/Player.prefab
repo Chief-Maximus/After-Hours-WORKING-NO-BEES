@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 3937025753037344664}
   - component: {fileID: 3788614835833495014}
   - component: {fileID: 549306977663553560}
+  - component: {fileID: 8547764160482155861}
   m_Layer: 0
   m_Name: Body_2_GEO
   m_TagString: Untagged
@@ -714,6 +715,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8547764160482155861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640488586955731945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &755310109768894506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,7 +2189,7 @@ GameObject:
   - component: {fileID: 6720545175658806351}
   - component: {fileID: 2812695040551017003}
   - component: {fileID: 8346237664052350920}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Head_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3060,6 +3075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151867056709082762}
   - component: {fileID: 3477343763756804376}
+  - component: {fileID: 5642460200295566541}
   m_Layer: 0
   m_Name: Body_Stripe_2_GEO
   m_TagString: Untagged
@@ -3184,6 +3200,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.3993085, y: 1.6858602, z: 0.92091715}
     m_Extent: {x: 0.15489614, y: 0.42194706, z: 0.07087654}
   m_DirtyAABB: 0
+--- !u!114 &5642460200295566541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738320265498768981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &4755291783030743587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,6 +4048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4546645281040871047}
   - component: {fileID: 8843335126563278439}
+  - component: {fileID: 7142656537339796073}
   m_Layer: 0
   m_Name: Body_Stripe_1_GEO
   m_TagString: Untagged
@@ -4142,6 +4173,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.3368708, y: 1.6691532, z: 0.9064112}
     m_Extent: {x: 0.13339902, y: 0.33209205, z: 0.10599649}
   m_DirtyAABB: 0
+--- !u!114 &7142656537339796073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022207841584909397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &6177353609634298728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,7 +5393,7 @@ GameObject:
   - component: {fileID: 4000636115358005322}
   - component: {fileID: 7163501019272150747}
   - component: {fileID: 1984961019494637295}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Head_Stripe_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5767,6 +5812,7 @@ GameObject:
   - component: {fileID: 1161250200616269150}
   - component: {fileID: 5356650186191032645}
   - component: {fileID: 7561874075765590581}
+  - component: {fileID: 1479678332703433431}
   m_Layer: 0
   m_Name: Body_1_GEO
   m_TagString: Untagged
@@ -5842,3 +5888,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1479678332703433431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185314837724594131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
