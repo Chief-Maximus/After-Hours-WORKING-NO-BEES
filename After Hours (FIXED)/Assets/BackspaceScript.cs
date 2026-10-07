@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class BackspaceScript : MonoBehaviour
 {
-    public NameScript NameScript;
+    public NameScript nameScript;
     public string HandTag;
+
+    public void ClickBackspace()
+    {
+        if (nameScript != null && nameScript.NameVar.Length > 0)
+        {
+            nameScript.NameVar = nameScript.NameVar.Remove(nameScript.NameVar.Length - 1);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.transform.tag == HandTag)
+        if (other.gameObject.tag == HandTag)
         {
-            NameScript.NameVar = NameScript.NameVar.Remove(NameScript.NameVar.Length - 1);
+            if (nameScript != null && nameScript.NameVar.Length > 0)
+            {
+                nameScript.NameVar = nameScript.NameVar.Remove(nameScript.NameVar.Length - 1);
+            }
         }
     }
 }

@@ -4628,6 +4628,7 @@ GameObject:
   - component: {fileID: 7959236336331382463}
   - component: {fileID: 5208430948681704949}
   - component: {fileID: 9004198428133684164}
+  - component: {fileID: 786428707142892371}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4644,7 +4645,7 @@ Transform:
   m_GameObject: {fileID: 7255469763264492891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0000000049404, y: -0.993, z: 0.231}
+  m_LocalPosition: {x: -0.0000000049404, y: -0.984, z: 0.231}
   m_LocalScale: {x: 1.3753135, y: 0.007980586, z: 0.65939116}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4724,6 +4725,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &786428707142892371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255469763264492891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d173a506f52d384fb7488c9d361685b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerName: Cull
+  layerIndex: 9
 --- !u!1 &7481971491519914025
 GameObject:
   m_ObjectHideFlags: 0
