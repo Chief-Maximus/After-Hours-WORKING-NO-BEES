@@ -19951,7 +19951,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583070711}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1583070715
 Camera:
   m_ObjectHideFlags: 0
@@ -19970,7 +19970,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -19985,7 +19985,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
