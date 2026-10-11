@@ -8,9 +8,17 @@ public class AddLetter : MonoBehaviour
     public string Handtag;
     public string Letter;
 
+    public void ClickLetter()
+    {
+        if (nameScript != null)
+        {
+            nameScript.NameVar += Letter;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == Handtag) 
+        if (other.transform.tag == Handtag)
         {
             nameScript.NameVar += Letter;
         }
