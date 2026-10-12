@@ -1,9 +1,79 @@
 fileFormatVersion: 2
-guid: 9fe4468175ef15845b1579e9b37ccc5a
+guid: 9d2a761489e06144da10ced3b10ba006
 ModelImporter:
   serializedVersion: 24000
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 76ac4c9892fcf964ebba20be4c81d639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: b7fb3f71bca5db34ba49ede8a4afb424, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: c254b4ff38aeaee459389de307f17235, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 8dc085c118909be4fb594a41d715e4ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 6f44575a566243e44bb78fe448a14df0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 00c66a24d8dddf14aa68e7c52405ef58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 43a4020aac536704d9c080fab08f341a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rusty metal.001
+    second: {fileID: 2100000, guid: 4febabb1214fffd46ac335e8cd2c8354, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rusty metal.002
+    second: {fileID: 2100000, guid: 26d72e407ec06304ebb125b4d0da611e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rusty metal.003
+    second: {fileID: 2100000, guid: 1ccbf502abb1064498f414b54494cf71, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rusty_diffuse
+    second: {fileID: 2800000, guid: 1d7ffb4502b69e042b8221b18316e671, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rusty_metallic
+    second: {fileID: 2800000, guid: 48d407643a5afab40bcf4ed5835b6ab1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rusty_normal_opengl
+    second: {fileID: 2800000, guid: 8def24bfba070f54aa19c11bb7284412, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rusty_specular
+    second: {fileID: 2800000, guid: f1c1f067e511efe42a94a3942ae1ad2c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
