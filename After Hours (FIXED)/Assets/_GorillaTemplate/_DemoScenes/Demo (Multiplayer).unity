@@ -36675,7 +36675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 430285557519011168, guid: ce5c2251d70caf148bbad13bb99ebf54, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 131072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 430285557680239484, guid: ce5c2251d70caf148bbad13bb99ebf54, type: 3}
       propertyPath: m_Layer
@@ -41097,7 +41097,10 @@ MonoBehaviour:
   LeftController: 1
   tagSounds:
   - tag: Marble
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 9d73c284aacef4e4ca627fb23bd4f941, type: 3}
+    - {fileID: 8300000, guid: a83e7f28db40c7b4abe23eb8c85274f6, type: 3}
+    - {fileID: 8300000, guid: e4b1434e756f81c448537953a7fb0961, type: 3}
 --- !u!114 &1882709448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46530,7 +46533,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -46630,7 +46633,10 @@ MonoBehaviour:
   LeftController: 0
   tagSounds:
   - tag: Marble
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 9d73c284aacef4e4ca627fb23bd4f941, type: 3}
+    - {fileID: 8300000, guid: a83e7f28db40c7b4abe23eb8c85274f6, type: 3}
+    - {fileID: 8300000, guid: e4b1434e756f81c448537953a7fb0961, type: 3}
 --- !u!114 &2142146351
 MonoBehaviour:
   m_ObjectHideFlags: 0
