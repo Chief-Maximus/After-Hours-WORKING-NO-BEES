@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Photon.VR;
+//using Photon.VR;
 using TMPro;
-using Photon.Pun;
+//using Photon.Pun;
 
 public class NameScriptUI : MonoBehaviour
 {
@@ -35,7 +35,7 @@ public class NameScriptUI : MonoBehaviour
 
         NameText.text = NameVar;
 
-        PhotonName = PhotonNetwork.LocalPlayer.NickName;
+//        PhotonName = PhotonNetwork.LocalPlayer.NickName;
 
         PhotonNameText.text = PhotonName;
     }
@@ -47,7 +47,7 @@ public class NameScriptUI : MonoBehaviour
 
         NameVar = CurrentName; 
 
-        PhotonVRManager.SetUsername(CurrentName);
+//        PhotonVRManager.SetUsername(CurrentName);
 
     }
 

@@ -1,0 +1,29 @@
+{
+  "name": "com.codedimmersions.mirrorvr",
+  "version": "1.0.0",
+  "displayName": "MirrorVR",
+  "description": "A wrapper for Mirror Networking that adds easy VR support.",
+  "unity": "6000.0",
+  "unityRelease": "38f1",
+  "documentationUrl": "https://codedimmersions.gitbook.io/mirrorvr",
+  "changelogUrl": "https://github.com/CodedImmersions/MirrorVR/releases",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.2"
+ },
+ "type": "library",
+ "license": "MIT",
+ "keywords": [
+    "Mirror",
+    "VR",
+    "Network",
+    "Photon",
+    "PUN",
+    "Fusion",
+    "Fish-Net"
+  ],
+  "author": {
+    "name": "Coded Immersions",
+    "email": "contact@codedimmersions.com",
+    "url": "https://codedimmersions.com"
+  }
+}

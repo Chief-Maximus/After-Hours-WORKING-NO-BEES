@@ -1,9 +1,9 @@
 using UnityEngine;
 using easyInputs;
-using Photon.Pun;
+//using Photon.Pun;
 using System.Collections.Generic;
 
-public class GrabbHand : MonoBehaviourPun
+public class GrabbHand : MonoBehaviour
 {
     [Header("Hand Settings")]
     public EasyHand _hand;
@@ -52,7 +52,7 @@ public class GrabbHand : MonoBehaviourPun
 
         if (isGrabbing && !_wasGrabbing)
         {
-            TryGrabObject();
+            //TryGrabObject();
         }
         else if (!isGrabbing && _wasGrabbing)
         {
@@ -94,46 +94,46 @@ public class GrabbHand : MonoBehaviourPun
         }
     }
 
-    private void TryGrabObject()
-    {
-        if (_nearestGrabbable &!_cGrabbed)
-        {
-            PhotonView targetPV = _nearestGrabbable.GetComponent<PhotonView>();
-            if (targetPV && !targetPV.IsMine)
-            {
-                if (_networkType == _NetworkType.Dont_Network)
-                {
-                    return;
-                }
+//    private void TryGrabObject()
+//    {
+//        if (_nearestGrabbable &!_cGrabbed)
+//        {
+//            PhotonView targetPV = _nearestGrabbable.GetComponent<PhotonView>();
+  //          if (targetPV && !targetPV.IsMine)
+    //        {
+      //          if (_networkType == _NetworkType.Dont_Network)
+        //        {
+          //          return;
+            //    }
+//
+  //              if (_networkType == _NetworkType.Dont_Steal && targetPV.Owner != PhotonNetwork.LocalPlayer)
+    //            {
+      //              return;
+        //        }
+//
+  ////              if (_networkType == _NetworkType.Steal)
+      //          {
+        //            targetPV.RequestOwnership();
+          //      }
+            //}
+//
+  //          _cGrabbed = _nearestGrabbable;
+    //        _rb = _cGrabbed.GetComponent<Rigidbody>();
+//
+  //          if (_rb)
+    //        {
+      //          SetupTransformGrab();
+//
+  //              _cGrabbed._onGrabObject.Invoke();
+    //            _cGrabbed._hand = _hand;
 
-                if (_networkType == _NetworkType.Dont_Steal && targetPV.Owner != PhotonNetwork.LocalPlayer)
-                {
-                    return;
-                }
-
-                if (_networkType == _NetworkType.Steal)
-                {
-                    targetPV.RequestOwnership();
-                }
-            }
-
-            _cGrabbed = _nearestGrabbable;
-            _rb = _cGrabbed.GetComponent<Rigidbody>();
-
-            if (_rb)
-            {
-                SetupTransformGrab();
-
-                _cGrabbed._onGrabObject.Invoke();
-                _cGrabbed._hand = _hand;
-
-                if (_grabSound && _audioPlayer)
-                {
-                    _audioPlayer.PlayOneShot(_grabSound);
-                }
-            }
-        }
-    }
+ //               if (_grabSound && _audioPlayer)
+   //             {
+     //              _audioPlayer.PlayOneShot(_grabSound);
+//                }
+  //          }
+    //    }
+    //}
 
     private void SetupTransformGrab()
     {

@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 using UnityEngine.XR;
 
-public class BetterHitSounds : MonoBehaviourPun
+public class BetterHitSounds : MonoBehaviour
 {
     public AudioSource audioSource;
     public bool LeftController;
@@ -17,19 +16,19 @@ public class BetterHitSounds : MonoBehaviourPun
         public AudioClip[] sounds;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (PhotonNetwork.IsConnected)
-        {
-            photonView.RPC("PlayHitSound", RpcTarget.All, other.gameObject.tag, LeftController);
-        }
-        else
-        {
-            PlayLocalHitSound(other.gameObject.tag);
-        }
-    }
+//    private void OnTriggerEnter(Collider other)
+//    {
+//        if (PhotonNetwork.IsConnected)
+//        {
+//            photonView.RPC("PlayHitSound", RpcTarget.All, other.gameObject.tag, LeftController);
+//        }
+//        else
+//        {
+//            PlayLocalHitSound(other.gameObject.tag);
+//        }
+//    }
 
-    [PunRPC]
+//    [PunRPC]
     void PlayHitSound(string tag, bool leftController)
     {
         TagSound sound = tagSounds.Find(x => x.tag == tag);
