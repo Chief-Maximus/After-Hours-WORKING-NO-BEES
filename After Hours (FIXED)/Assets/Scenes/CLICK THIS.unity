@@ -39159,6 +39159,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6609095303273223075, guid: 9dfde4d8e6ad1d349bcdeabf59c16405, type: 3}
       propertyPath: windowsEditor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609095303273223075, guid: 9dfde4d8e6ad1d349bcdeabf59c16405, type: 3}
+      propertyPath: automaticallyJoinRoom
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -48933,6 +48937,7 @@ GameObject:
   - component: {fileID: 1820276080}
   - component: {fileID: 1820276082}
   - component: {fileID: 1820276081}
+  - component: {fileID: 1820276083}
   m_Layer: 8
   m_Name: Whistle
   m_TagString: Untagged
@@ -48993,6 +48998,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820276079}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1820276083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820276079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1582497826
+  _assetId: 0
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0
 --- !u!64 &1822008586
 MeshCollider:
   m_ObjectHideFlags: 0
