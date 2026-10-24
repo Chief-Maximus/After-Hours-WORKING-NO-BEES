@@ -48980,10 +48980,10 @@ MonoBehaviour:
   Controllers:
   - {fileID: 1882709442}
   - {fileID: 244049869}
-  Range: 0.1
+  Range: 15
   Cooldown: 15
-  UseNet: 0
-  GizmoColor: {r: 0.60956496, g: 0.10196078, b: 1, a: 1}
+  UseNet: 1
+  GizmoColor: {r: 1, g: 0.10196079, b: 0.10196078, a: 1}
   AlwaysShowGizmo: 0
 --- !u!33 &1820276082
 MeshFilter:
