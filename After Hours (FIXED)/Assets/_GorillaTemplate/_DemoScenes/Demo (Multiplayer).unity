@@ -54204,6 +54204,10 @@ PrefabInstance:
       propertyPath: windowsEditor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6609095303273223075, guid: 9dfde4d8e6ad1d349bcdeabf59c16405, type: 3}
+      propertyPath: automaticallyJoinRoom
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

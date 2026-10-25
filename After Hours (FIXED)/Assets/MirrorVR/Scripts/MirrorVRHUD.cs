@@ -68,7 +68,11 @@ namespace Mirror.VR
 
             GUILayout.BeginHorizontal();
             GUI.enabled = !EOSTransport.ConnectedToLobby;
-            if (GUILayout.Button("Join or Create Lobby")) MirrorVRManager.JoinOrCreateLobby(LobbyName, MaxPlayers);
+            if (GUILayout.Button("Join or Create Lobby"))
+            {
+                AttributeData publicRoom = new AttributeData { Key = MirrorVRManager.PublicRoomKey, Value = true };
+                MirrorVRManager.JoinOrCreateLobby(LobbyName, MaxPlayers, new[] { publicRoom });
+            }
 
             LobbyName = GUILayout.TextField(LobbyName, 40, GUILayout.MinWidth(150), GUILayout.ExpandWidth(false));
             GUILayout.EndHorizontal();

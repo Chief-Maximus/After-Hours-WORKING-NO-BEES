@@ -55,6 +55,8 @@ namespace EpicTransport
         #endregion
 
         #region Static Fields
+        public static event Action<string> LoginFailed;
+        public static string LastLoginError { get; private set; }
         public static bool IsConnecting { get { return instance.isConnecting; } }
         public static bool Initialized { get { return instance.initialized; } }
 
@@ -236,6 +238,8 @@ namespace EpicTransport
         {
             if (IsConnecting || Initialized) return;
 
+            LastLoginError = null;
+
             if (options.EncryptionKey.Length != 64) throw new ArgumentOutOfRangeException(nameof(options.EncryptionKey), "Your EOS Encryption Key is not exactly 64 characters, or is not set. Please make sure it is exactly 32 hexadecimal bytes. (aka 64 characters, A-F, a-f, 0-9)");
 
             initoptions = options;
@@ -248,7 +252,11 @@ namespace EpicTransport
             };
 
             Result initres = PlatformInterface.Initialize(ref initopt);
-            if (initres != Result.Success && initres != Result.AlreadyConfigured) throw new EOSSDKException(initres, "Failed to initialize platform!");
+            if (initres != Result.Success && initres != Result.AlreadyConfigured)
+            {
+                FailLogin($"EOS platform initialization failed with Result.{initres}.");
+                return;
+            }
 
             instance.gameObject.AddComponent<TransportLogger>().Initialize(instance.eosLoggerLevel, instance.transportLoggerLevel);
 
@@ -282,7 +290,11 @@ namespace EpicTransport
             TransportLogger.Log("creating platform");
             instance.Platform = PlatformInterface.Create(ref createopt);
             TransportLogger.Log($"platform is null? {instance.Platform == null}");
-            if (instance.Platform == null) throw new Exception("Failed to create platform!");
+            if (instance.Platform == null)
+            {
+                FailLogin("EOS platform creation failed.");
+                return;
+            }
 
 #if UNITY_EDITOR
             //for Transport Android Utils
@@ -291,8 +303,14 @@ namespace EpicTransport
 
             if (ShouldUseAuthInterface(options.AuthInterfaceCredentialType))
             {
-                //we are using auth + connect interface
-                instance.AuthInterfaceLogin();
+                try
+                {
+                    instance.AuthInterfaceLogin();
+                }
+                catch (Exception e)
+                {
+                    FailLogin($"EOS login could not start: {e.Message}");
+                }
             }
             else
             {
@@ -308,19 +326,52 @@ namespace EpicTransport
                         instance.Platform.GetConnectInterface().CreateDeviceId(ref idopt, null, (ref CreateDeviceIdCallbackInfo cb) =>
                         {
                             TransportLogger.Log("done");
-                            if (cb.ResultCode != Result.Success && cb.ResultCode != Result.DuplicateNotAllowed) throw new EOSSDKException(cb.ResultCode, "Failed to create device ID!");
+                            if (cb.ResultCode != Result.Success && cb.ResultCode != Result.DuplicateNotAllowed)
+                            {
+                                FailLogin($"EOS device ID creation failed with Result.{cb.ResultCode}.");
+                                return;
+                            }
                             TransportLogger.Log("got device id ig");
-                            instance.ConnectInterfaceLogin();
+
+                            try
+                            {
+                                instance.ConnectInterfaceLogin();
+                            }
+                            catch (Exception e)
+                            {
+                                FailLogin($"EOS login could not start: {e.Message}");
+                            }
                         });
                     }
-                    catch (Exception e) { Debug.LogException(e); }
+                    catch (Exception e)
+                    {
+                        FailLogin($"EOS device ID creation failed: {e.Message}");
+                    }
                 }
-                else instance.ConnectInterfaceLogin();
+                else
+                {
+                    try
+                    {
+                        instance.ConnectInterfaceLogin();
+                    }
+                    catch (Exception e)
+                    {
+                        FailLogin($"EOS login could not start: {e.Message}");
+                    }
+                }
             }
         }
         #endregion
 
         #region Helper Methods
+
+        private static void FailLogin(string message)
+        {
+            LastLoginError = message;
+            if (instance != null) instance.isConnecting = false;
+            TransportLogger.LogError(message);
+            LoginFailed?.Invoke(message);
+        }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool ShouldUseAuthInterface(LoginCredentialType cred) => cred != LoginCredentialType.ExternalAuth;
@@ -367,58 +418,73 @@ namespace EpicTransport
 
         private void ConnectLoginCallback(ref Epic.OnlineServices.Connect.LoginCallbackInfo cb)
         {
-            if (Epic.OnlineServices.Common.IsOperationComplete(cb.ResultCode))
+            if (!Epic.OnlineServices.Common.IsOperationComplete(cb.ResultCode))
             {
-                TransportLogger.Log(cb.ResultCode.ToString());
+                FailLogin($"EOS Connect login did not complete (Result.{cb.ResultCode}).");
+                return;
+            }
 
-                switch (cb.ResultCode)
-                {
-                    case Result.Success:
-                        //logged in
-                        localUserProductID = cb.LocalUserId;
-                        localUserProductIDString = cb.LocalUserId.ToString();
+            TransportLogger.Log(cb.ResultCode.ToString());
+
+            switch (cb.ResultCode)
+            {
+                case Result.Success:
+                    localUserProductID = cb.LocalUserId;
+                    localUserProductIDString = cb.LocalUserId.ToString();
+
+                    instance.isConnecting = false;
+                    instance.initialized = true;
+                    LastLoginError = null;
+                    break;
+
+                case Result.InvalidUser:
+                    if (cb.ContinuanceToken == null)
+                    {
+                        FailLogin("EOS Connect login returned InvalidUser without a continuance token.");
+                        break;
+                    }
+
+                    CreateUserOptions createopt = new CreateUserOptions() { ContinuanceToken = cb.ContinuanceToken };
+                    Platform.GetConnectInterface().CreateUser(ref createopt, null, (ref CreateUserCallbackInfo cb2) =>
+                    {
+                        if (cb2.ResultCode != Result.Success)
+                        {
+                            FailLogin($"EOS CreateUser failed with Result.{cb2.ResultCode}.");
+                            return;
+                        }
+
+                        localUserProductID = cb2.LocalUserId;
+                        localUserProductIDString = cb2.LocalUserId.ToString();
 
                         instance.isConnecting = false;
                         instance.initialized = true;
-                        break;
+                        LastLoginError = null;
 
-                    case Result.InvalidUser:
-                        //no user found, we need to create one.
-                        if (cb.ContinuanceToken == null) throw new EOSSDKException(cb.ResultCode, "Continuance Token is null. Cannot create account.");
+                        TransportLogger.Log("New account created!");
 
-                        CreateUserOptions createopt = new CreateUserOptions() { ContinuanceToken = cb.ContinuanceToken };
-                        Platform.GetConnectInterface().CreateUser(ref createopt, null, (ref CreateUserCallbackInfo cb2) =>
-                        {
-                            if (cb2.ResultCode != Result.Success) throw new EOSSDKException(cb2.ResultCode, "Failed to create user!");
+                        AddNotifyAuthExpirationOptions aeexp2 = new AddNotifyAuthExpirationOptions();
+                        connectAuthExpirationHandle = Platform.GetConnectInterface().AddNotifyAuthExpiration(ref aeexp2, null, ConnectExpiration);
+                    });
+                    break;
 
-                            localUserProductID = cb2.LocalUserId;
-                            localUserProductIDString = cb2.LocalUserId.ToString();
-
-                            instance.isConnecting = false;
-                            instance.initialized = true;
-
-                            TransportLogger.Log("New account created!");
-
-                            AddNotifyAuthExpirationOptions aeexp2 = new AddNotifyAuthExpirationOptions();
-                            connectAuthExpirationHandle = Platform.GetConnectInterface().AddNotifyAuthExpiration(ref aeexp2, null, ConnectExpiration);
-                        });
-                        break;
-
-                    default:
-                        TransportLogger.LogWarning($"EOS_Connect_Login returned unknown result 'Result.{cb.ResultCode}'.");
-                        break;
-                }
-            }
-            else
-            {
-                TransportLogger.LogError($"(Result.{cb.ResultCode}) operation not complete.");
+                default:
+                    FailLogin($"EOS Connect login failed with Result.{cb.ResultCode}.");
+                    break;
             }
         }
 
         private void ConnectExpiration(ref AuthExpirationCallbackInfo cb)
         {
             Platform.GetConnectInterface().RemoveNotifyAuthExpiration(connectAuthExpirationHandle);
-            ConnectInterfaceLogin();
+
+            try
+            {
+                ConnectInterfaceLogin();
+            }
+            catch (Exception e)
+            {
+                FailLogin($"EOS login could not be refreshed: {e.Message}");
+            }
         }
 
         private void AuthInterfaceLogin()
@@ -437,7 +503,11 @@ namespace EpicTransport
 
             Platform.GetAuthInterface().Login(ref loginopt, null, (ref Epic.OnlineServices.Auth.LoginCallbackInfo cb) =>
             {
-                if (cb.ResultCode != Result.Success) throw new EOSSDKException(cb.ResultCode, "Failed to login to auth interface!");
+                if (cb.ResultCode != Result.Success)
+                {
+                    FailLogin($"EOS Auth login failed with Result.{cb.ResultCode}.");
+                    return;
+                }
 
                 localUserAccountID = cb.LocalUserId;
                 localUserAccountIDString = cb.LocalUserId.ToString();
@@ -449,15 +519,30 @@ namespace EpicTransport
                 };
 
                 Result res1 = Platform.GetUserInfoInterface().CopyUserInfo(ref copyopt, out UserInfoData? dat);
-                if (res1 != Result.Success) throw new EOSSDKException(res1, "Failed to copy user info!");
+                if (res1 != Result.Success)
+                {
+                    FailLogin($"EOS user info lookup failed with Result.{res1}.");
+                    return;
+                }
                 initoptions.DisplayName = dat.Value.DisplayName;
 
                 CopyUserAuthTokenOptions authopt = new CopyUserAuthTokenOptions();
                 Result res2 = Platform.GetAuthInterface().CopyUserAuthToken(ref authopt, LocalUserAccountID, out Token? token);
-                if (res2 != Result.Success) throw new EOSSDKException(res2, "Failed to copy auth token!");
+                if (res2 != Result.Success)
+                {
+                    FailLogin($"EOS auth token lookup failed with Result.{res2}.");
+                    return;
+                }
                 initoptions.LoginToken = token?.AccessToken;
 
-                ConnectInterfaceLogin();
+                try
+                {
+                    ConnectInterfaceLogin();
+                }
+                catch (Exception e)
+                {
+                    FailLogin($"EOS login could not start: {e.Message}");
+                }
             });
         }
 

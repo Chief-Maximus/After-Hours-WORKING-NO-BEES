@@ -207,6 +207,11 @@ namespace Mirror.VR
         public static ProductUserId ProductUserID => EOSManager.LocalUserProductID;
         public static string ProductUserIDString => EOSManager.LocalUserProductIDString;
 
+        public static string LastAuthenticationError { get; private set; }
+        public static event Action<string> AuthenticationFailed;
+
+        private const float AuthenticationTimeoutSeconds = 90f;
+
         #endregion
 
 #if STEAMWORKS_NET && !DISABLESTEAMWORKS
@@ -302,17 +307,36 @@ namespace Mirror.VR
         private void OnDisable()
         {
             Application.quitting -= OnQuit;
+            EOSManager.LoginFailed -= OnEosLoginFailed;
         }
 
         private void OnEnable()
         {
             Application.quitting += OnQuit;
+            EOSManager.LoginFailed += OnEosLoginFailed;
+        }
+
+        private void OnEosLoginFailed(string message)
+        {
+            LastAuthenticationError = message;
+            MirrorVRLogger.LogError($"EOS authentication failed: {message}");
+            AuthenticationFailed?.Invoke(message);
         }
 
 #if !UNITY_SERVER || UNITY_EDITOR
         private IEnumerator OnLogin()
         {
-            yield return new WaitUntil(() => EOSManager.Initialized);
+            float deadline = Time.realtimeSinceStartup + AuthenticationTimeoutSeconds;
+            yield return new WaitUntil(() => EOSManager.Initialized || !string.IsNullOrEmpty(LastAuthenticationError) || Time.realtimeSinceStartup >= deadline);
+
+            if (!EOSManager.Initialized)
+            {
+                if (string.IsNullOrEmpty(LastAuthenticationError))
+                    FailAuthentication($"Authentication timed out after {AuthenticationTimeoutSeconds:0} seconds (EOS connecting={EOSManager.IsConnecting}, last EOS error={EOSManager.LastLoginError ?? "none"}).");
+
+                MirrorVRLogger.LogError($"Cannot join a lobby because authentication failed: {LastAuthenticationError}");
+                yield break;
+            }
 
             if (automaticallyJoinRoom) JoinRandomLobby();
         }
@@ -322,7 +346,17 @@ namespace Mirror.VR
 
         private IEnumerator OnLogin()
         {
-            yield return new WaitUntil(() => EOSManager.Initialized);
+            float deadline = Time.realtimeSinceStartup + AuthenticationTimeoutSeconds;
+            yield return new WaitUntil(() => EOSManager.Initialized || !string.IsNullOrEmpty(LastAuthenticationError) || Time.realtimeSinceStartup >= deadline);
+
+            if (!EOSManager.Initialized)
+            {
+                if (string.IsNullOrEmpty(LastAuthenticationError))
+                    FailAuthentication($"Authentication timed out after {AuthenticationTimeoutSeconds:0} seconds (EOS connecting={EOSManager.IsConnecting}, last EOS error={EOSManager.LastLoginError ?? "none"}).");
+
+                MirrorVRLogger.LogError($"Cannot start the server because authentication failed: {LastAuthenticationError}");
+                yield break;
+            }
 
             hostMigration = false;
 
@@ -405,60 +439,93 @@ namespace Mirror.VR
 
         private void Login()
         {
+            LastAuthenticationError = null;
             MirrorVRAuthType authtype = GetAuthType();
+            MirrorVRLogger.LogInfo($"Authenticating with {authtype} on {Application.platform} (package={Application.identifier}, installer={Application.installerName}, version={Application.version}).");
 
             switch (authtype)
             {
                 case MirrorVRAuthType.Oculus:
 #if META_XR_SDK
-                    Core.AsyncInitialize().OnComplete(result1 =>
+                    try
                     {
-                        if (!result1.IsError)
+                        Core.AsyncInitialize().OnComplete(result1 =>
                         {
+                            if (result1.IsError)
+                            {
+                                FailOculusAuthentication("Oculus init failed", result1.GetError());
+                                return;
+                            }
+
                             Entitlements.IsUserEntitledToApplication().OnComplete(result2 =>
                             {
-                                if (!result2.IsError)
+                                if (result2.IsError)
                                 {
-                                    Users.GetLoggedInUser().OnComplete(result3 =>
+                                    FailOculusAuthentication("Entitlement check failed", result2.GetError());
+                                    return;
+                                }
+
+                                Users.GetLoggedInUser().OnComplete(result3 =>
+                                {
+                                    if (result3.IsError)
                                     {
-                                        if (!result3.IsError)
+                                        FailOculusAuthentication("Oculus login failed", result3.GetError());
+                                        return;
+                                    }
+
+                                    User userr = result3.GetUser();
+                                    if (userr == null)
+                                    {
+                                        FailOculusAuthentication("Oculus login returned no user", null);
+                                        return;
+                                    }
+
+                                    if (string.IsNullOrEmpty(PlayerPrefs.GetString("Username"))) PlayerPrefs.SetString("Username", userr.OculusID);
+
+                                    Users.GetUserProof().OnComplete(result4 =>
+                                    {
+                                        if (result4.IsError)
                                         {
-                                            User userr = result3.GetUser();
-                                            if (string.IsNullOrEmpty(PlayerPrefs.GetString("Username"))) PlayerPrefs.SetString("Username", userr.OculusID);
+                                            FailOculusAuthentication("Oculus nonce validation failed", result4.GetError());
+                                            return;
+                                        }
 
-                                            Users.GetUserProof().OnComplete(result4 =>
+                                        MirrorVRLogger.LogInfo($"Login to account oculus {userr.OculusID} success (package={Application.identifier}, version={Application.version})");
+
+                                        try
+                                        {
+                                            EOSManager.Initialize(new TransportInitializeOptions()
                                             {
-                                                if (!result4.IsError)
-                                                {
-                                                    MirrorVRLogger.LogInfo($"Login to account oculus {userr.OculusID} success");
-                                                    EOSManager.Initialize(new TransportInitializeOptions()
-                                                    {
-                                                        AuthInterfaceCredentialType = LoginCredentialType.ExternalAuth,
-                                                        ConnectInterfaceCredentialType = ExternalCredentialType.OculusUseridNonce,
+                                                AuthInterfaceCredentialType = LoginCredentialType.ExternalAuth,
+                                                ConnectInterfaceCredentialType = ExternalCredentialType.OculusUseridNonce,
 
-                                                        ProductName = productName,
-                                                        ProductId = productId,
-                                                        ClientId = clientId,
-                                                        ClientSecret = clientSecret,
-                                                        SandboxId = sandboxId,
-                                                        DeploymentId = deploymentId,
-                                                        EncryptionKey = encryptionKey,
+                                                ProductName = productName,
+                                                ProductId = productId,
+                                                ClientId = clientId,
+                                                ClientSecret = clientSecret,
+                                                SandboxId = sandboxId,
+                                                DeploymentId = deploymentId,
+                                                EncryptionKey = encryptionKey,
 
-                                                        DisplayName = PlayerPrefs.GetString("Username", userr.OculusID),
-                                                        LoginToken = $"{userr.ID.ToString()}|{result4.Data.Value}"
-                                                    });
-                                                }
-                                                else MirrorVRLogger.LogError($"Oculus nonce validation failed with message: {result4.GetError().Message}");
+                                                DisplayName = PlayerPrefs.GetString("Username", userr.OculusID),
+                                                LoginToken = $"{userr.ID.ToString()}|{result4.Data.Value}"
                                             });
                                         }
-                                        else MirrorVRLogger.LogError($"Oculus login failed with message: {result3.GetError().Message}");
+                                        catch (Exception ex)
+                                        {
+                                            FailAuthentication($"EOS initialization failed: {ex.Message}");
+                                        }
                                     });
-                                }
-                                else MirrorVRLogger.LogError($"Entitlement check failed with message: {result2.GetError().Message}");
+                                });
                             });
-                        }
-                        else MirrorVRLogger.LogError($"Oculus init failed with message: {result1.GetError().Message}");
-                    });
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        FailAuthentication($"Oculus initialization failed: {ex.Message}");
+                    }
+#else
+                    FailAuthentication("Oculus authentication is unavailable because META_XR_SDK is not defined.");
 #endif
                     break;
 
@@ -470,21 +537,28 @@ namespace Mirror.VR
                         PlayerPrefs.SetString("Username", dname);
                     }
 
-                    EOSManager.Initialize(new TransportInitializeOptions()
+                    try
                     {
-                        AuthInterfaceCredentialType = LoginCredentialType.ExternalAuth,
-                        ConnectInterfaceCredentialType = ExternalCredentialType.DeviceidAccessToken,
+                        EOSManager.Initialize(new TransportInitializeOptions()
+                        {
+                            AuthInterfaceCredentialType = LoginCredentialType.ExternalAuth,
+                            ConnectInterfaceCredentialType = ExternalCredentialType.DeviceidAccessToken,
 
-                        ProductName = productName,
-                        ProductId = productId,
-                        ClientId = clientId,
-                        ClientSecret = clientSecret,
-                        SandboxId = sandboxId,
-                        DeploymentId = deploymentId,
-                        EncryptionKey = encryptionKey,
+                            ProductName = productName,
+                            ProductId = productId,
+                            ClientId = clientId,
+                            ClientSecret = clientSecret,
+                            SandboxId = sandboxId,
+                            DeploymentId = deploymentId,
+                            EncryptionKey = encryptionKey,
 
-                        DisplayName = dname
-                    });
+                            DisplayName = dname
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        FailAuthentication($"EOS initialization failed: {ex.Message}");
+                    }
 
                     break;
 
@@ -518,6 +592,23 @@ namespace Mirror.VR
 
             }
         }
+
+        private static void FailAuthentication(string message)
+        {
+            LastAuthenticationError = message;
+            MirrorVRLogger.LogError(message);
+            AuthenticationFailed?.Invoke(message);
+        }
+
+#if META_XR_SDK
+        private static void FailOculusAuthentication(string message, Oculus.Platform.Models.Error error)
+        {
+            string diagnostics = $"platform={Application.platform}, package={Application.identifier}, installer={Application.installerName}, appId={Oculus.Platform.PlatformSettings.MobileAppID}, version={Application.version}";
+            if (error != null) diagnostics += $", code={error.Code}, http={error.HttpCode}";
+            string detail = error == null ? string.Empty : $": {error.Message}";
+            FailAuthentication($"{message} ({diagnostics}){detail}");
+        }
+#endif
 
         #region Steam
 #if STEAMWORKS_NET && !DISABLESTEAMWORKS
