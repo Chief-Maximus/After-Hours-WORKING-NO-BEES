@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Puchynco.AfterHours" xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.unity3d.player" xmlns:tools="http://schemas.android.com/tools">
   <application android:usesCleartextTraffic="false" android:allowBackup="false">
     <activity android:name="com.unity3d.player.appui.AppUIGameActivity" android:theme="@style/BaseUnityGameActivityTheme" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
       <intent-filter>
@@ -11,6 +11,4 @@
     </activity>
   </application>
   <uses-permission android:name="android.permission.VIBRATE" />
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
