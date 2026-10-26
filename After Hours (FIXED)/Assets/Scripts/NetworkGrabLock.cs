@@ -48,7 +48,7 @@ public class NetworkGrabLock : NetworkBehaviour
 
     public override void OnStopAuthority()
     {
-        if (!isServer)
+        if (!NetworkServer.active)
         {
             localHolding = false;
             heldHand = null;
@@ -68,14 +68,14 @@ public class NetworkGrabLock : NetworkBehaviour
 
     private void Update()
     {
-        if (!isClient)
+        if (netIdentity == null || !netIdentity.isClient)
             return;
 
         Player player = Player.Instance;
         if (player == null || player.leftHandTransform == null || player.rightHandTransform == null)
             return;
 
-        if (isOwned && !isServer)
+        if (netIdentity != null && netIdentity.isOwned && !NetworkServer.active)
         {
             if (localHolding)
                 return;
@@ -92,7 +92,7 @@ public class NetworkGrabLock : NetworkBehaviour
             return;
         }
 
-        if (isServer || localHolding || awaitingAuthority || localRequestPending || locallyLocked)
+        if (NetworkServer.active || localHolding || awaitingAuthority || localRequestPending || locallyLocked)
             return;
 
         bool leftPressed = EasyInputs.GetGripButtonDown(EasyHand.LeftHand);
@@ -156,8 +156,8 @@ public class NetworkGrabLock : NetworkBehaviour
         locallyLocked = grabbed;
         if (body != null)
         {
-            body.isKinematic = grabbed || !isServer && !isOwned;
-            body.useGravity = !grabbed && (isServer || isOwned) && originalUseGravity;
+            body.isKinematic = grabbed || !NetworkServer.active && (netIdentity == null || !netIdentity.isOwned);
+            body.useGravity = !grabbed && (NetworkServer.active || netIdentity != null && netIdentity.isOwned) && originalUseGravity;
         }
 
         if (networkTransform != null)
@@ -172,7 +172,7 @@ public class NetworkGrabLock : NetworkBehaviour
         if (!localHolding || heldHand == null)
             return;
 
-        if (!isServer && !isOwned)
+        if (netIdentity == null || !NetworkServer.active && !netIdentity.isOwned)
         {
             localHolding = false;
             heldHand = null;
@@ -208,7 +208,7 @@ public class NetworkGrabLock : NetworkBehaviour
 
         localHolding = false;
         heldHand = null;
-        if (isServer)
+        if (NetworkServer.active)
             ReleaseServerAuthority();
         else
         {
@@ -227,7 +227,7 @@ public class NetworkGrabLock : NetworkBehaviour
 
     private void ReleaseServerAuthority()
     {
-        if (netIdentity.connectionToClient != null)
+        if (netIdentity != null && netIdentity.connectionToClient != null)
             netIdentity.RemoveClientAuthority();
         if (body != null)
         {
@@ -237,5 +237,6 @@ public class NetworkGrabLock : NetworkBehaviour
         RpcSetGrabbed(false);
     }
 }
+
 
 

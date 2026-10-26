@@ -4305,25 +4305,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 611e6121747f1d64387eb95a9a2bd5b4, type: 3}
   m_PrefabInstance: {fileID: 2057963370}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &135415903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135415902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f34842a246347a9b712940dea63e82e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMethod: 0
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  grabDistance: 0.28
-  followSharpness: 30
-  releaseVelocityMultiplier: 1.2
 --- !u!54 &135415904
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13153,7 +13134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 510984095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00712f934dcdb2442bbcc7c738cd1dce, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f34842a246347a9b712940dea63e82e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grabDistance: 0.28
