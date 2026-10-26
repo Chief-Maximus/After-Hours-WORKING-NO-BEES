@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public static class QuestDebugBuild
 {
     private const string ScenePath = "Assets/Scenes/CLICK THIS.unity";
-    private const string OutputDirectory = @"C:\Users\Husk\AppData\Local\Temp\opencode\AfterHoursQuest";
+    private const string OutputDirectory = @"C:\Builds\AfterHoursQuest";
     private const string OutputPath = OutputDirectory + @"\AfterHours-quest-debug.apk";
     private const string RequestPath = OutputDirectory + @"\build-request.txt";
     private const string ResultPath = OutputDirectory + @"\build-result.txt";
