@@ -210,15 +210,32 @@ namespace EpicTransport
 
             if (Application.platform == RuntimePlatform.Android)
             {
-                using (AndroidJavaClass sys = new AndroidJavaClass("java.lang.System")) sys.CallStatic("loadLibrary", "EOSSDK");
+                try
+                {
+                    using (AndroidJavaClass loader = new AndroidJavaClass("com.epicgames.mobile.eossdk.LibraryLoader"))
+                        loader.CallStatic("loadOrThrow");
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"EOS Android library load failed: {e}");
+                }
 
+                try
+                {
 #if UNITY_6000_0_OR_NEWER
-                using (AndroidJavaClass eos = new AndroidJavaClass("com.epicgames.mobile.eossdk.EOSSDK")) { eos.CallStatic("init", UnityEngine.Android.AndroidApplication.currentActivity); }
+                    using (AndroidJavaClass eos = new AndroidJavaClass("com.epicgames.mobile.eossdk.EOSSDK"))
+                        eos.CallStatic("init", UnityEngine.Android.AndroidApplication.currentActivity);
 #else
-                AndroidJavaClass player = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-                AndroidJavaObject activity = player.GetStatic<AndroidJavaObject>("currentActivity");
-                using (AndroidJavaClass eos = new AndroidJavaClass("com.epicgames.mobile.eossdk.EOSSDK")) { eos.CallStatic("init", activity); }
+                    AndroidJavaClass player = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+                    AndroidJavaObject activity = player.GetStatic<AndroidJavaObject>("currentActivity");
+                    using (AndroidJavaClass eos = new AndroidJavaClass("com.epicgames.mobile.eossdk.EOSSDK"))
+                        eos.CallStatic("init", activity);
 #endif
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"EOS Android init failed: {e}");
+                }
             }
         }
 

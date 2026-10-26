@@ -8,4 +8,8 @@ public class LibraryLoader {
             e.printStackTrace();
         }
     }
+
+    public static void loadOrThrow() {
+        System.loadLibrary("EOSSDK");
+    }
 }

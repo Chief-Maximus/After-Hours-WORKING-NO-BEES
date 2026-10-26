@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DevAgentSettings
   m_EditorClassIdentifier: 
   enabled: 0
-  serverAddress: 192.168.0.210
+  serverAddress: 192.168.50.39
   serverPort: 48735
   useVoiceSdkForInput: 0
   witConfiguration: {fileID: 0}
@@ -22,4 +22,4 @@ MonoBehaviour:
   handPushToTalkGesture: 0
   enableDelayedRelease: 1
   releaseDelay: 0.8
-  accessToken: bb31fe64c19a446e8212cb9bb403a37b
+  accessToken: 054d06635081475c95aa16899c297ba9

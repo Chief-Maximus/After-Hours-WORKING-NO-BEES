@@ -99,6 +99,8 @@ namespace Mirror.VR
 
         private MirrorVRManager manager;
         private Transform root;
+        private MaterialPropertyBlock colorProperties;
+        private Color appliedPlayerColor;
 
         public override void OnStartLocalPlayer()
         {
@@ -146,6 +148,8 @@ namespace Mirror.VR
             DontDestroyOnLoad(this);
 
             root = headRef.parent;
+            colorProperties = new MaterialPropertyBlock();
+            ApplyPlayerColor();
         }
 
         public override void OnStartServer()
@@ -177,13 +181,9 @@ namespace Mirror.VR
 
             nameText.text = playerName;
             name = $"Player ({playerName})";
-            if (TargetMesh.Count > 0)
+            if (TargetMesh.Count > 0 && appliedPlayerColor != playerColor)
             {
-                for (int i = 0; i < TargetMesh.Count; i++)
-                {
-                    var tar = TargetMesh[i];
-                    tar.material.color = playerColor;
-                }
+                ApplyPlayerColor();
             }
 
             if (isServer) clientrtt = netIdentity.connectionToClient.rtt;
@@ -221,11 +221,35 @@ namespace Mirror.VR
 
         private void OnPlayerNameChanged(string _old, string _new) => nameText.text = _new;
 
+        private void ApplyPlayerColor()
+        {
+            if (colorProperties == null)
+            {
+                colorProperties = new MaterialPropertyBlock();
+            }
+
+            colorProperties.SetColor("_Color", playerColor);
+            colorProperties.SetColor("_BaseColor", playerColor);
+            appliedPlayerColor = playerColor;
+
+            for (int i = 0; i < TargetMesh.Count; i++)
+            {
+                Renderer target = TargetMesh[i];
+                if (target == null)
+                {
+                    continue;
+                }
+
+                target.SetPropertyBlock(colorProperties);
+            }
+        }
+
         internal void SetPlayerColor(Color color)
         {
             if (isLocalPlayer)
             {
                 playerColor = color;
+                ApplyPlayerColor();
                 PlayerPrefs.SetString("PlayerColor", JsonUtility.ToJson(color));
                 CmdUpdateValues(EOSManager.DisplayName, color);
             }

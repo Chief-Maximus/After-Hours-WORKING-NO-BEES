@@ -36,6 +36,7 @@ namespace MetaVoiceChat.Output.AudioSource
         private float TimeSincePreviousFrame => (float)frameStopwatch.Elapsed.TotalSeconds;
 
         private bool isInit = false;
+        private bool hasPendingFrameCleanup;
 
         private float targetLatency;
 
@@ -58,10 +59,10 @@ namespace MetaVoiceChat.Output.AudioSource
 
         private void Update()
         {
-            // this fixes audio looping bug with old data when no frames are received for a while
-            if (isInit && TimeSincePreviousFrame > frameLifetime)
+            if (isInit && hasPendingFrameCleanup && TimeSincePreviousFrame > frameLifetime)
             {
                 vcAudioClip.Clear();
+                hasPendingFrameCleanup = false;
             }
 
             // Build up the buffer until the target latency is reached and start playing at the correct clip time
@@ -140,7 +141,10 @@ namespace MetaVoiceChat.Output.AudioSource
                 audioSource.pitch = 1f + response;
             }
 
-            ClearOldFrames();
+            if (hasPendingFrameCleanup)
+            {
+                ClearOldFrames();
+            }
         }
 
         private void ClearOldFrames()
@@ -216,6 +220,8 @@ namespace MetaVoiceChat.Output.AudioSource
             {
                 greatestFrameIndex = index;
             }
+
+            hasPendingFrameCleanup = true;
 
             // attempt to jump to correct time after a dropout
             //if (TimeSincePreviousFrame > frameLifetime)
