@@ -1,194 +1,241 @@
-using System;
-using System.Reflection;
 using Mirror;
 using UnityEngine;
+using easyInputs;
+using GorillaLocomotion;
 
 public class NetworkGrabLock : NetworkBehaviour
 {
-    [SyncVar]
-    private bool isGrabbed;
+    [SerializeField] private float grabDistance = 0.28f;
+    [SerializeField] private float followSharpness = 30f;
+    [SerializeField] private float releaseVelocityMultiplier = 1.2f;
 
-    private Component grabbable;
-    private int localGrabCount;
-    private bool isLocallyLocked;
-    private object localGrabber;
-    private EventInfo grabbedEvent;
-    private EventInfo releasedEvent;
-    private Delegate grabbedHandler;
-    private Delegate releasedHandler;
+    private Rigidbody body;
+    private NetworkTransformUnreliable networkTransform;
+    private Transform heldHand;
+    private Vector3 previousHandPosition;
+    private Vector3 handVelocity;
+    private bool localHolding;
+    private bool locallyLocked;
+    private bool originalKinematic;
+    private bool originalUseGravity;
+    private bool awaitingAuthority;
+    private bool localRequestPending;
+    private float nextAuthorityRequestTime;
 
     private void Awake()
     {
-        grabbable = FindGrabbable();
+        body = GetComponent<Rigidbody>();
+        networkTransform = GetComponent<NetworkTransformUnreliable>();
+        if (body != null)
+        {
+            originalKinematic = body.isKinematic;
+            originalUseGravity = body.useGravity;
+        }
     }
 
     public override void OnStartClient()
     {
-        if (grabbable == null)
-        {
-            grabbable = FindGrabbable();
-        }
+        ApplyHeldState(false);
+    }
 
-        if (grabbable != null)
+    public override void OnStartAuthority()
+    {
+        awaitingAuthority = false;
+        localRequestPending = false;
+        locallyLocked = true;
+        ApplyHeldState(true);
+    }
+
+    public override void OnStopAuthority()
+    {
+        if (!isServer)
         {
-            SubscribeToGrabEvents();
+            localHolding = false;
+            heldHand = null;
+            locallyLocked = false;
+            ApplyHeldState(false);
         }
     }
 
     public override void OnStopClient()
     {
-        if (grabbable != null)
+        if (body != null)
         {
-            UnsubscribeFromGrabEvents();
+            body.isKinematic = originalKinematic;
+            body.useGravity = originalUseGravity;
         }
     }
 
-    public override void OnStartServer()
+    private void Update()
     {
-        if (grabbable == null)
-        {
-            grabbable = FindGrabbable();
-        }
+        if (!isClient)
+            return;
 
-        SetGrabbableEnabled(!isGrabbed);
-    }
+        Player player = Player.Instance;
+        if (player == null || player.leftHandTransform == null || player.rightHandTransform == null)
+            return;
 
-    private Component FindGrabbable()
-    {
-        foreach (Component component in GetComponents<Component>())
+        if (isOwned && !isServer)
         {
-            if (component != null && component.GetType().Name == "Grabbable")
+            if (localHolding)
+                return;
+            bool leftHeld = EasyInputs.GetGripButtonDown(EasyHand.LeftHand);
+            bool rightHeld = EasyInputs.GetGripButtonDown(EasyHand.RightHand);
+            Transform ownedHand = FindCandidateHand(player, leftHeld, rightHeld);
+            if (ownedHand == null)
             {
-                return component;
+                localRequestPending = true;
+                CmdReleaseGrab();
+                return;
             }
-        }
-
-        return null;
-    }
-
-    private void SubscribeToGrabEvents()
-    {
-        if (grabbable == null || grabbedHandler != null)
-        {
+            BeginLocalHold(ownedHand);
             return;
         }
 
-        Type grabbableType = grabbable.GetType();
-        grabbedEvent = grabbableType.GetEvent("OnGrabbed", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-        releasedEvent = grabbableType.GetEvent("OnReleased", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+        if (isServer || localHolding || awaitingAuthority || localRequestPending || locallyLocked)
+            return;
 
-        if (grabbedEvent == null || releasedEvent == null)
+        bool leftPressed = EasyInputs.GetGripButtonDown(EasyHand.LeftHand);
+        bool rightPressed = EasyInputs.GetGripButtonDown(EasyHand.RightHand);
+        Transform candidate = FindCandidateHand(player, leftPressed, rightPressed);
+        if (candidate == null || Time.unscaledTime < nextAuthorityRequestTime)
+            return;
+
+        nextAuthorityRequestTime = Time.unscaledTime + 0.15f;
+        awaitingAuthority = true;
+        CmdRequestGrab();
+    }
+
+    private Transform FindCandidateHand(Player player, bool leftPressed, bool rightPressed)
+    {
+        float leftDistance = leftPressed ? Vector3.Distance(player.leftHandTransform.position, transform.position) : float.MaxValue;
+        float rightDistance = rightPressed ? Vector3.Distance(player.rightHandTransform.position, transform.position) : float.MaxValue;
+        float closestDistance = Mathf.Min(leftDistance, rightDistance);
+        if (closestDistance > grabDistance)
+            return null;
+        return leftDistance <= rightDistance ? player.leftHandTransform : player.rightHandTransform;
+    }
+
+    [Command(requiresAuthority = false)]
+    private void CmdRequestGrab(NetworkConnectionToClient sender = null)
+    {
+        if (sender == null || sender.identity == null || netIdentity.connectionToClient != null)
+            return;
+
+        if (!netIdentity.AssignClientAuthority(sender))
+            return;
+
+        RpcSetGrabbed(true);
+    }
+
+    [ClientRpc]
+    private void RpcSetGrabbed(bool grabbed)
+    {
+        ApplyHeldState(grabbed);
+        if (!grabbed)
         {
+            localHolding = false;
+            heldHand = null;
+            awaitingAuthority = false;
+            localRequestPending = false;
+        }
+    }
+
+    private void BeginLocalHold(Transform hand)
+    {
+        localHolding = true;
+        heldHand = hand;
+        previousHandPosition = hand.position;
+        handVelocity = Vector3.zero;
+        locallyLocked = true;
+        ApplyHeldState(true);
+    }
+
+    private void ApplyHeldState(bool grabbed)
+    {
+        locallyLocked = grabbed;
+        if (body != null)
+        {
+            body.isKinematic = grabbed || !isServer && !isOwned;
+            body.useGravity = !grabbed && (isServer || isOwned) && originalUseGravity;
+        }
+
+        if (networkTransform != null)
+        {
+            networkTransform.enabled = true;
+            networkTransform.syncDirection = grabbed ? SyncDirection.ClientToServer : SyncDirection.ServerToClient;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (!localHolding || heldHand == null)
+            return;
+
+        if (!isServer && !isOwned)
+        {
+            localHolding = false;
+            heldHand = null;
             return;
         }
 
-        MethodInfo grabbedMethod = GetType().GetMethod(nameof(OnLocalGrabbed), BindingFlags.Instance | BindingFlags.NonPublic);
-        MethodInfo releasedMethod = GetType().GetMethod(nameof(OnLocalReleased), BindingFlags.Instance | BindingFlags.NonPublic);
-        grabbedHandler = Delegate.CreateDelegate(grabbedEvent.EventHandlerType, this, grabbedMethod, false);
-        releasedHandler = Delegate.CreateDelegate(releasedEvent.EventHandlerType, this, releasedMethod, false);
-
-        if (grabbedHandler != null && releasedHandler != null)
+        Vector3 targetPosition = heldHand.position;
+        transform.position = Vector3.Lerp(transform.position, targetPosition, 1f - Mathf.Exp(-followSharpness * Time.unscaledDeltaTime));
+        transform.rotation = heldHand.rotation;
+        handVelocity = (heldHand.position - previousHandPosition) / Mathf.Max(Time.unscaledDeltaTime, 0.0001f);
+        previousHandPosition = heldHand.position;
+        if (body != null)
         {
-            grabbedEvent.AddEventHandler(grabbable, grabbedHandler);
-            releasedEvent.AddEventHandler(grabbable, releasedHandler);
+            body.position = transform.position;
+            body.rotation = transform.rotation;
         }
+
+        bool stillPressed = heldHand == Player.Instance.leftHandTransform
+            ? EasyInputs.GetGripButtonDown(EasyHand.LeftHand)
+            : EasyInputs.GetGripButtonDown(EasyHand.RightHand);
+        if (!stillPressed)
+            ReleaseLocalHold();
     }
 
-    private void UnsubscribeFromGrabEvents()
+    private void ReleaseLocalHold()
     {
-        if (grabbable != null && grabbedHandler != null && grabbedEvent != null)
+        if (body != null)
         {
-            grabbedEvent.RemoveEventHandler(grabbable, grabbedHandler);
+            body.isKinematic = false;
+            body.useGravity = originalUseGravity;
+            body.linearVelocity = handVelocity * releaseVelocityMultiplier;
         }
 
-        if (grabbable != null && releasedHandler != null && releasedEvent != null)
+        localHolding = false;
+        heldHand = null;
+        if (isServer)
+            ReleaseServerAuthority();
+        else
         {
-            releasedEvent.RemoveEventHandler(grabbable, releasedHandler);
-        }
-
-        grabbedHandler = null;
-        releasedHandler = null;
-    }
-
-    private void OnLocalGrabbed(object item, object player)
-    {
-        localGrabCount++;
-        localGrabber = player;
-
-        NetworkIdentity playerIdentity = GetPlayerIdentity(player);
-        if (playerIdentity != null && playerIdentity.isLocalPlayer)
-        {
-            isLocallyLocked = true;
-            SetGrabbableEnabled(false);
-
-            CmdSetGrabbed(true, netIdentity);
-        }
-    }
-
-    private void OnLocalReleased(object item, object player)
-    {
-        localGrabCount = Mathf.Max(0, localGrabCount - 1);
-
-        NetworkIdentity playerIdentity = GetPlayerIdentity(localGrabber);
-        if (localGrabCount == 0 && playerIdentity != null && playerIdentity.isLocalPlayer)
-        {
-            isLocallyLocked = false;
-            SetGrabbableEnabled(true);
-
-            CmdSetGrabbed(false, netIdentity);
-            localGrabber = null;
-        }
-    }
-
-    private static NetworkIdentity GetPlayerIdentity(object player)
-    {
-        if (player is Component playerComponent)
-        {
-            return playerComponent.GetComponent<NetworkIdentity>();
-        }
-
-        if (player is GameObject playerObject)
-        {
-            return playerObject.GetComponent<NetworkIdentity>();
-        }
-
-        return null;
-    }
-
-    private void SetGrabbableEnabled(bool enabled)
-    {
-        if (grabbable is Behaviour behaviour)
-        {
-            behaviour.enabled = enabled;
+            localRequestPending = true;
+            CmdReleaseGrab();
         }
     }
 
     [Command(requiresAuthority = false)]
-    private void CmdSetGrabbed(bool grabbed, NetworkIdentity itemIdentity, NetworkConnectionToClient sender = null)
+    private void CmdReleaseGrab(NetworkConnectionToClient sender = null)
     {
-        if (itemIdentity != netIdentity || sender == null || sender.identity == null)
-        {
+        if (sender == null || netIdentity.connectionToClient != sender)
             return;
-        }
-
-        if (grabbed && isGrabbed)
-        {
-            RpcSetGrabEnabled(false);
-            return;
-        }
-
-        if (!grabbed && !isGrabbed)
-        {
-            return;
-        }
-
-        isGrabbed = grabbed;
-        RpcSetGrabEnabled(!grabbed);
+        ReleaseServerAuthority();
     }
 
-    [ClientRpc]
-    private void RpcSetGrabEnabled(bool enabled)
+    private void ReleaseServerAuthority()
     {
-        SetGrabbableEnabled(enabled && !isLocallyLocked);
+        if (netIdentity.connectionToClient != null)
+            netIdentity.RemoveClientAuthority();
+        if (body != null)
+        {
+            body.isKinematic = false;
+            body.useGravity = originalUseGravity;
+        }
+        RpcSetGrabbed(false);
     }
 }
+
+

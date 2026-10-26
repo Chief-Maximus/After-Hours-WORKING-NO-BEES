@@ -20,6 +20,7 @@ namespace MetaVoiceChat.NetProviders.Mirror
         #endregion
 
         bool INetProvider.IsLocalPlayerDeafened => LocalPlayerInstance.MetaVc.isDeafened;
+        bool INetProvider.HasRemotePlayers => instances.Count > 1;
 
         public MetaVc MetaVc { get; private set; }
 
@@ -64,6 +65,11 @@ namespace MetaVoiceChat.NetProviders.Mirror
 
         void INetProvider.RelayFrame(int index, double timestamp, ReadOnlySpan<byte> data)
         {
+            if (instances.Count <= 1)
+            {
+                return;
+            }
+
             var array = FixedLengthArrayPool<byte>.Rent(data.Length);
             data.CopyTo(array);
 

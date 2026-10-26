@@ -4,6 +4,7 @@ using System.Text;
 using EpicTransport;
 using Mirror;
 using Mirror.VR;
+using MetaVoiceChat.NetProviders.Mirror;
 using TMPro;
 using UnityEngine;
 using Application = UnityEngine.Application;
@@ -21,6 +22,7 @@ public class NetworkDebugOverlay : MonoBehaviour
     public bool showStackTraces = false;
 
     private float nextRefresh;
+    private float smoothedFrameTime;
     private static readonly object logLock = new object();
     private static readonly List<LogEntry> logs = new List<LogEntry>();
     private static bool installed;
@@ -112,6 +114,15 @@ public class NetworkDebugOverlay : MonoBehaviour
 
     private void Update()
     {
+        float frameTime = Time.unscaledDeltaTime;
+        if (frameTime > 0f)
+        {
+            float smoothing = 1f - Mathf.Exp(-frameTime * 2f);
+            smoothedFrameTime = smoothedFrameTime <= 0f
+                ? frameTime
+                : Mathf.Lerp(smoothedFrameTime, frameTime, smoothing);
+        }
+
         if (targetText == null) return;
         if (Time.unscaledTime < nextRefresh) return;
 
@@ -130,6 +141,16 @@ public class NetworkDebugOverlay : MonoBehaviour
         bool lobby = EOSTransport.instance != null && EOSTransport.ConnectedToLobby;
         string lobbyCode = "-";
         if (lobby && EOSTransport.ConnectedLobbyInfo != null) lobbyCode = EOSTransport.ConnectedLobbyInfo.LobbyId;
+        int playerCount = MirrorVRManager.PlayerList != null ? MirrorVRManager.PlayerList.Count : 0;
+        int voicePeers = MirrorNetProvider.Instances.Count;
+        float fps = smoothedFrameTime > 0f ? 1f / smoothedFrameTime : 0f;
+        float frameTimeMs = smoothedFrameTime * 1000f;
+        string mode = NetworkServer.active ? "HOST" : NetworkClient.active ? "CLIENT" : "OFFLINE";
+        string reason = NetworkServer.active
+            ? "Host runs server and client locally"
+            : NetworkClient.active
+                ? "Client networking active"
+                : "Offline gameplay";
 
 #if META_XR_SDK
         bool metaReady = Core.IsInitialized();
@@ -151,6 +172,9 @@ public class NetworkDebugOverlay : MonoBehaviour
 
         sb.AppendLine($"Net:   {(NetworkServer.active ? "HOST" : NetworkClient.active ? "CLIENT" : "OFFLINE")}");
         sb.AppendLine($"Lobby: {(lobby ? $"<color=#77ff77><noparse>{lobbyCode}</noparse></color>" : "NOT CONNECTED")}");
+        sb.AppendLine($"FPS:   {fps:0.0}  Frame: {frameTimeMs:0.0} ms");
+        sb.AppendLine($"Load:  {mode}  Players: {playerCount}  Voice peers: {voicePeers}");
+        sb.AppendLine($"Reason: {reason}");
         sb.AppendLine($"Player: <noparse>{(MirrorVRPlayer.Player != null ? MirrorVRPlayer.Player.name : "-")}</noparse>");
         sb.AppendLine("<line-height=90%>--- LOG ---</line-height>");
 

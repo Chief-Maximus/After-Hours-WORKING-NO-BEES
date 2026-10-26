@@ -97,6 +97,12 @@ namespace MetaVoiceChat
 
         private void SendFrame(int index, float[] samples)
         {
+            if (!netProvider.HasRemotePlayers)
+            {
+                isSpeaking.Value = false;
+                return;
+            }
+
             if (samples != null && isSineOverrideEnabled)
             {
                 const float Amplitude = 0.2f;
@@ -109,19 +115,19 @@ namespace MetaVoiceChat
                 }
             }
 
-            bool isSpeaking = samples != null;
+            bool speakingNow = samples != null;
 
-            this.isSpeaking.Value = isSpeaking;
+            this.isSpeaking.Value = speakingNow;
 
             bool shouldRelayEmpty;
 
             if (isEchoEnabled)
             {
-                shouldRelayEmpty = !isSpeaking;
+                shouldRelayEmpty = !speakingNow;
             }
             else
             {
-                shouldRelayEmpty = !isSpeaking || isDeafened || isInputMuted;
+                shouldRelayEmpty = !speakingNow || isDeafened || isInputMuted;
             }
 
             if (shouldRelayEmpty)
