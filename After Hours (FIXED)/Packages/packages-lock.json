@@ -361,7 +361,7 @@
     },
     "com.unity.textmeshpro": {
       "version": "5.0.0",
-      "depth": 2,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.ugui": "2.0.0"
@@ -523,6 +523,24 @@
         "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
+    },
+    "tv.liv.lck": {
+      "version": "file:tv.liv.lck",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.2",
+        "com.unity.textmeshpro": "2.0.0"
+      }
+    },
+    "tv.liv.lck-streaming": {
+      "version": "file:tv.liv.lck-streaming",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.2",
+        "com.unity.textmeshpro": "2.0.0"
+      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
