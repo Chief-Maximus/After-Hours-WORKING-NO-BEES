@@ -21983,7 +21983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5828, y: 1.7934}
+  m_AnchoredPosition: {x: 1, y: 1.7934}
   m_SizeDelta: {x: 56.7543, y: 25.1209}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830754870
@@ -58097,6 +58097,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1950636763952426682, guid: 10aea6c65094d0942b2583eccf07f103, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950636763952426682, guid: 10aea6c65094d0942b2583eccf07f103, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.73
+      objectReference: {fileID: 0}
     - target: {fileID: 3473131234740318885, guid: 10aea6c65094d0942b2583eccf07f103, type: 3}
       propertyPath: m_Name
       value: auntieannestandFINAL (1)
@@ -60288,9 +60296,6 @@ SceneRoots:
   - {fileID: 193786585}
   - {fileID: 1380548086}
   - {fileID: 830754869}
-<<<<<<< Updated upstream
   - {fileID: 1328395955}
-=======
   - {fileID: 937162387}
   - {fileID: 1102291554}
->>>>>>> Stashed changes
