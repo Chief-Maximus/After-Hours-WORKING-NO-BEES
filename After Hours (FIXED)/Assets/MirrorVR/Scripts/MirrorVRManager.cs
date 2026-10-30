@@ -775,58 +775,83 @@ namespace Mirror.VR
         /// <param name="maxPlayers">The max amount of players that can join this room. Set in-code as -1, but is actually <see cref="instance.roomLimit"/>.</param>
         /// <param name="createLobbyWhenNoMatchesFound">If <see langword="true"/>, a new lobby will be created if no matches are found. If <see langword="false"/>, nothing will happen if no matches are found.</param>
         public static void JoinRandomLobby(int maxPlayers = -1, AttributeData[] ExtraAttributes = null, bool createLobbyWhenNoMatchesFound = true)
+{
+    MirrorVRLogger.LogInfo("Joining random lobby...");
+
+    if (!EOSManager.Initialized)
+    {
+        MirrorVRLogger.LogWarn("You must be logged in to join a lobby.");
+        return;
+    }
+
+    List<AttributeData> searchAttributes = new List<AttributeData>
+    {
+        new AttributeData
         {
-            MirrorVRLogger.LogInfo("Joining random lobby...");
-            if (!EOSManager.Initialized)
-            {
-                MirrorVRLogger.LogWarn($"{nameof(CreateLobby)} failed. You must be logged in to call this method.");
-                return;
-            }
-
-            EOSTransport.SearchForLobbiesByAttribute(new AttributeData { Key = PublicRoomKey, Value = true }, 200, cb =>
-            {
-                if (cb.Count > 0)
-                {
-                    List<(LobbyDetails details, uint playerCount)> candidates = new List<(LobbyDetails details, uint playerCount)>();
-
-                    foreach (LobbyDetails details in cb)
-                    {
-                        LobbyDetailsCopyInfoOptions infoopt = new LobbyDetailsCopyInfoOptions();
-                        if (details.CopyInfo(ref infoopt, out LobbyDetailsInfo? info) != Result.Success || !info.HasValue) continue;
-
-                        uint current = info.Value.MaxMembers - info.Value.AvailableSlots;
-
-                        if (current <= 0) continue;
-                        if (info.Value.AvailableSlots <= 0) continue;
-
-                        candidates.Add((details, current));
-                    }
-
-                    candidates.Sort((a, b) => a.playerCount.CompareTo(b.playerCount));
-
-                    if (candidates.Count > 0) EOSTransport.JoinLobby(candidates[0].details);
-                    else Create(maxPlayers, ExtraAttributes, createLobbyWhenNoMatchesFound);
-                }
-                else Create(maxPlayers, ExtraAttributes, createLobbyWhenNoMatchesFound);
-            });
-
-            static void Create(int maxPlayers = -1, AttributeData[] ExtraAttributes = null, bool createLobbyWhenNoMatchesFound = true)
-            {
-                if (!createLobbyWhenNoMatchesFound)
-                {
-                    MirrorVRLogger.LogInfo($"{nameof(JoinRandomLobby)}: No matching lobbies found.");  //nothing to join, and we aren't allowed to create a new one.
-                    return;
-                }
-
-                MirrorVRLogger.LogInfo($"{nameof(JoinRandomLobby)}: No matching lobbies found, creating a new one...");
-                AttributeData dat = new AttributeData() { Key = PublicRoomKey, Value = true };
-                if (ExtraAttributes == null) ExtraAttributes = new AttributeData[] { dat };
-                else ExtraAttributes = ExtraAttributes.Append(dat).ToArray();
-
-                if (maxPlayers == -1) maxPlayers = instance.roomLimit;
-                CreateLobby(UnityEngine.Random.Range(10000, 99999).ToString(), maxPlayers, ExtraAttributes);
-            }
+            Key = PublicRoomKey,
+            Value = true
         }
+    };
+
+    if (ExtraAttributes != null)
+        searchAttributes.AddRange(ExtraAttributes);
+
+    EOSTransport.SearchForLobbiesByAttributes(searchAttributes, 200, cb =>
+    {
+        List<(LobbyDetails details, uint playerCount)> candidates = new List<(LobbyDetails, uint)>();
+
+        foreach (LobbyDetails details in cb)
+        {
+            LobbyDetailsCopyInfoOptions infoopt = new LobbyDetailsCopyInfoOptions();
+
+            if (details.CopyInfo(ref infoopt, out LobbyDetailsInfo? info) != Result.Success || !info.HasValue)
+                continue;
+
+            uint current = info.Value.MaxMembers - info.Value.AvailableSlots;
+
+            if (info.Value.AvailableSlots <= 0)
+                continue;
+
+            candidates.Add((details, current));
+        }
+
+        candidates.Sort((a, b) => b.playerCount.CompareTo(a.playerCount));
+
+        if (candidates.Count > 0)
+        {
+            EOSTransport.JoinLobby(candidates[0].details);
+        }
+        else
+        {
+            Create(maxPlayers, ExtraAttributes, createLobbyWhenNoMatchesFound);
+        }
+    });
+
+    static void Create(int maxPlayers, AttributeData[] ExtraAttributes, bool createLobbyWhenNoMatchesFound)
+    {
+        if (!createLobbyWhenNoMatchesFound)
+        {
+            MirrorVRLogger.LogInfo("No matching lobbies found.");
+            return;
+        }
+
+        AttributeData publicAttribute = new AttributeData()
+        {
+            Key = PublicRoomKey,
+            Value = true
+        };
+
+        if (ExtraAttributes == null)
+            ExtraAttributes = new AttributeData[] { publicAttribute };
+        else
+            ExtraAttributes = ExtraAttributes.Append(publicAttribute).ToArray();
+
+        if (maxPlayers == -1)
+            maxPlayers = instance.roomLimit;
+
+        CreateLobby(UnityEngine.Random.Range(10000, 99999).ToString(), maxPlayers, ExtraAttributes);
+    }
+}
 
         /// <summary>
         /// Disconnects from the current lobby.

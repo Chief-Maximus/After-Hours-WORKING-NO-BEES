@@ -1021,3 +1021,1985 @@ Symbol file LoadedFromMemory is not a mono symbol file
 [OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
 [OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
 [OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFB8B7D835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFB8B7D835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012CD2BA8200)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012CD2BA8200)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012CD2BA8200)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFB8B7D835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFB8B7D835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F406401E0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F406401E0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F406401E0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFB8A97835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFB8A97835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0CCE40)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0CCE40)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0CCE40)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFC4D62835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFC4D62835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012C97AFCC70)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012C97AFCC70)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012C97AFCC70)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFC4D62835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFC4D62835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F4697A1D0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F4697A1D0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F4697A1D0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFC4EC8835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFC4EC8835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F480FF2F0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F480FF2F0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012F480FF2F0)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+C:\build\output\Unity-Technologies\mono\mono\eglib\gpath.c:115: assertion 'filename != NULL' failed
+

@@ -440,37 +440,70 @@ namespace EpicTransport
         /// <param name="maxResults">The maximum results returned. Value must be between 1 and 200.</param>
         /// <param name="callback">The callback for once the search has finished. Note: will not be called if there is an error thrown.</param>
         public static void SearchForLobbiesByAttribute(AttributeData attribute, uint maxResults, Action<List<LobbyDetails>> callback)
+{
+    SearchForLobbiesByAttributes(new List<AttributeData> { attribute }, maxResults, callback);
+}
+
+public static void SearchForLobbiesByAttributes(List<AttributeData> attributes, uint maxResults, Action<List<LobbyDetails>> callback)
+{
+    if (maxResults > LobbyInterface.MAX_SEARCH_RESULTS)
+        throw new ArgumentOutOfRangeException(nameof(maxResults));
+
+    List<LobbyDetails> result = new List<LobbyDetails>();
+
+    CreateLobbySearchOptions searchopt = new CreateLobbySearchOptions()
+    {
+        MaxResults = maxResults
+    };
+
+    Result res1 = EOSManager.GetLobbyInterface().CreateLobbySearch(ref searchopt, out LobbySearch search);
+
+    if (res1 != Result.Success)
+        throw new EOSSDKException(res1, "Failed to create a lobby search!");
+
+    foreach (AttributeData attribute in attributes)
+    {
+        LobbySearchSetParameterOptions setparamsopt = new LobbySearchSetParameterOptions()
         {
-            if (maxResults > LobbyInterface.MAX_SEARCH_RESULTS) throw new ArgumentOutOfRangeException(nameof(maxResults), $"Max results must be between 1 and {LobbyInterface.MAX_SEARCH_RESULTS}. Current max results: {maxResults}.");
+            Parameter = attribute
+        };
 
-            List<LobbyDetails>result = new List<LobbyDetails>();
+        Result res2 = search.SetParameter(ref setparamsopt);
 
-            CreateLobbySearchOptions searchopt = new CreateLobbySearchOptions() { MaxResults = maxResults };
-            Result res1 = EOSManager.GetLobbyInterface().CreateLobbySearch(ref searchopt, out LobbySearch search);
-            if (res1 != Result.Success) throw new EOSSDKException(res1, "Failed to create a lobby search!");
+        if (res2 != Result.Success)
+            throw new EOSSDKException(res2, "Failed to set the params of a lobby search!");
+    }
 
-            LobbySearchSetParameterOptions setparamsopt = new LobbySearchSetParameterOptions() { Parameter = attribute };
-            Result res2 = search.SetParameter(ref setparamsopt);
-            if (res2 != Result.Success) throw new EOSSDKException(res2, "Failed to set the params of a lobby search!");
+    LobbySearchFindOptions findopt = new LobbySearchFindOptions()
+    {
+        LocalUserId = EOSManager.LocalUserProductID
+    };
 
-            LobbySearchFindOptions findopt = new LobbySearchFindOptions() { LocalUserId = EOSManager.LocalUserProductID };
-            search.Find(ref findopt, null, (ref LobbySearchFindCallbackInfo cb) =>
+    search.Find(ref findopt, null, (ref LobbySearchFindCallbackInfo cb) =>
+    {
+        if (cb.ResultCode != Result.Success && cb.ResultCode != Result.NotFound)
+            throw new EOSSDKException(cb.ResultCode, "Failed to search for lobbies!");
+
+        LobbySearchGetSearchResultCountOptions countopt = new LobbySearchGetSearchResultCountOptions();
+
+        for (uint i = 0; i < search.GetSearchResultCount(ref countopt); i++)
+        {
+            LobbySearchCopySearchResultByIndexOptions copyopt = new LobbySearchCopySearchResultByIndexOptions()
             {
-                if (cb.ResultCode != Result.Success && cb.ResultCode != Result.NotFound) throw new EOSSDKException(cb.ResultCode, "Failed to search for lobbies!");
+                LobbyIndex = i
+            };
 
-                LobbySearchGetSearchResultCountOptions countopt = new LobbySearchGetSearchResultCountOptions();
-                for (uint i = 0; i < search.GetSearchResultCount(ref countopt); i++)
-                {
-                    LobbySearchCopySearchResultByIndexOptions copyopt = new LobbySearchCopySearchResultByIndexOptions() { LobbyIndex = i };
-                    Result res3 = search.CopySearchResultByIndex(ref copyopt, out LobbyDetails details);
-                    if (res3 != Result.Success) throw new EOSSDKException(res3, "Failed to copy lobby by index in lobby search!");
+            Result res3 = search.CopySearchResultByIndex(ref copyopt, out LobbyDetails details);
 
-                    result.Add(details);
-                }
+            if (res3 != Result.Success)
+                throw new EOSSDKException(res3, "Failed to copy lobby by index in lobby search!");
 
-                callback.Invoke(result);
-            });
+            result.Add(details);
         }
+
+        callback.Invoke(result);
+    });
+}
 
         /// <summary>
         /// Searches for lobbies based on the id of the lobby.
