@@ -1,0 +1,1023 @@
+2026-10-30
+Rendering UV GBuffer for Main_LM0 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA1 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LM0.lz4" 2 0 0 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA1.lz4" 2 0 1 0
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM00.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA10.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM01.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA11.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM02.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA12.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM03.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA13.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_final" 4 16 0 "gi_Main_LM04.bin" "Main_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_final" 4 16 1 "gi_Main_LMA14.bin" "Main_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "0" "Main_LM0_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 192632, left 46750
+Collecting edges...
+126531 edges
+Sorting...
+Finding seams...X
+28 seams
+Generating mesh...
+Initializing D3D...
+Selected device: NVIDIA GeForce RTX 4060
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" 2048 0
+Loaded vertex shader: seamfix.vso
+Loaded pixel shader: debugLines.pso
+Loading half-float lightmap...
+Rendering...
+Saving...
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "1" "Main_LMA1_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 192632, left 1408
+Collecting edges...
+4197 edges
+Sorting...
+Finding seams...X
+0 seams
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LM0_final.hdr" 1024 1
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA1_final.hdr" 1024 1
+Initializing D3D...
+Done
+Initializing D3D...
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Main_LM0 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA1 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA2 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA3 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LM0.lz4" 2 0 0 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA2.lz4" 2 0 2 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA1.lz4" 2 0 1 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA3.lz4" 2 0 3 0
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3" 4 0 3 comp_3.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM00.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2_diffuse" 4 16 2 "gi_Main_LMA20.bin" "Main_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA10.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3_diffuse" 4 16 3 "gi_Main_LMA30.bin" "Main_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM01.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2_diffuse" 4 16 2 "gi_Main_LMA21.bin" "Main_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA11.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3_diffuse" 4 16 3 "gi_Main_LMA31.bin" "Main_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM02.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2_diffuse" 4 16 2 "gi_Main_LMA22.bin" "Main_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA12.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3_diffuse" 4 16 3 "gi_Main_LMA32.bin" "Main_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM03.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2_diffuse" 4 16 2 "gi_Main_LMA23.bin" "Main_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA13.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3_diffuse" 4 16 3 "gi_Main_LMA33.bin" "Main_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_final" 4 16 0 "gi_Main_LM04.bin" "Main_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA2_final" 4 16 2 "gi_Main_LMA24.bin" "Main_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_final" 4 16 1 "gi_Main_LMA14.bin" "Main_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA3_final" 4 16 3 "gi_Main_LMA34.bin" "Main_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "0" "Main_LM0_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 405748, left 80294
+Collecting edges...
+214368 edges
+Sorting...
+Finding seams...X
+75 seams
+Generating mesh...
+Initializing D3D...
+Selected device: NVIDIA GeForce RTX 4060
+Loaded vertex shader: seamfix.vso
+Loaded pixel shader: debugLines.pso
+Loading half-float lightmap...
+Rendering...
+Saving...
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA2_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA2_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "2" "Main_LMA2_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 405748, left 1408
+Collecting edges...
+4197 edges
+Sorting...
+Finding seams...X
+0 seams
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "1" "Main_LMA1_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 405748, left 18331
+Collecting edges...
+53442 edges
+Sorting...
+Finding seams...X
+0 seams
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA3_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA3_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "3" "Main_LMA3_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 405748, left 1404
+Collecting edges...
+4185 edges
+Sorting...
+Finding seams...X
+0 seams
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LM0_final.hdr" 1024 1
+Initializing D3D...
+Done
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA2_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA2_final.hdr" 1024 1
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA1_final.hdr" 1024 1
+Initializing D3D...
+Done
+Initializing D3D...
+Done
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA3_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA3_final.hdr" 1024 1
+Initializing D3D...
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Main_LM0 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA1 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LM0.lz4" 2 0 0 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA1.lz4" 2 0 1 0
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM00.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA10.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM01.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA11.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM02.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA12.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM03.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA13.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_final" 4 16 0 "gi_Main_LM04.bin" "Main_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_final" 4 16 1 "gi_Main_LMA14.bin" "Main_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "0" "Main_LM0_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 64599
+Collecting edges...
+141243 edges
+Sorting...
+Finding seams...X
+47 seams
+Generating mesh...
+Initializing D3D...
+Selected device: NVIDIA GeForce RTX 4060
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" 2048 0
+Loaded vertex shader: seamfix.vso
+Loaded pixel shader: debugLines.pso
+Loading half-float lightmap...
+Rendering...
+Saving...
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "1" "Main_LMA1_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 1404
+Collecting edges...
+4185 edges
+Sorting...
+Finding seams...X
+0 seams
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LM0_final.hdr" 1024 1
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA1_final.hdr" 1024 1
+Initializing D3D...
+Done
+Initializing D3D...
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Main_LM0 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA1 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LM0.lz4" 2 0 0 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA1.lz4" 2 0 1 0
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM00.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA10.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM01.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA11.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM02.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA12.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM03.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA13.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_final" 4 16 0 "gi_Main_LM04.bin" "Main_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_final" 4 16 1 "gi_Main_LMA14.bin" "Main_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "0" "Main_LM0_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 64599
+Collecting edges...
+141243 edges
+Sorting...
+Finding seams...X
+47 seams
+Generating mesh...
+Initializing D3D...
+Selected device: NVIDIA GeForce RTX 4060
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" 2048 0
+Loaded vertex shader: seamfix.vso
+Loaded pixel shader: debugLines.pso
+Loading half-float lightmap...
+Rendering...
+Saving...
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "1" "Main_LMA1_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 1404
+Collecting edges...
+4185 edges
+Sorting...
+Finding seams...X
+0 seams
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LM0_final.hdr" 1024 1
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA1_final.hdr" 1024 1
+Initializing D3D...
+Done
+Initializing D3D...
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Main_LM0 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main_LMA1 51
+RGBA32F...RGBA8...R8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LM0.lz4" 2 0 0 0
+Running ftraceRTX9 fixpos12 "C:\Users\Husk\AppData\Local\Temp\frender" "uvpos_Main_LMA1.lz4" 2 0 1 0
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX9 addmul "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM00.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA10.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM01.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA11.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM02.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA12.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_diffuse" 4 16 0 "gi_Main_LM03.bin" "Main_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_diffuse" 4 16 1 "gi_Main_LMA13.bin" "Main_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LM0_final" 4 16 0 "gi_Main_LM04.bin" "Main_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX9 texgi "C:\Users\Husk\AppData\Local\Temp\frender" "Main_LMA1_final" 4 16 1 "gi_Main_LMA14.bin" "Main_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" 4096 0
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "0" "Main_LM0_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 64599
+Collecting edges...
+141243 edges
+Sorting...
+Finding seams...X
+47 seams
+Generating mesh...
+Initializing D3D...
+Selected device: NVIDIA GeForce RTX 4060
+Running denoiserOIDN c "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" 2048 0
+Loaded vertex shader: seamfix.vso
+Loaded pixel shader: debugLines.pso
+Loading half-float lightmap...
+Rendering...
+Saving...
+Running seamfixer "C:\Users\Husk\AppData\Local\Temp\frender" "1" "Main_LMA1_final_HDR.lz4"
+Loading geometry...
+Tris filtered by LMID: was 264012, left 1404
+Collecting edges...
+4185 edges
+Sorting...
+Finding seams...X
+0 seams
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LM0_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LM0_final.hdr" 1024 1
+Running halffloat2hdr "C:\Users\Husk\AppData\Local\Temp\frender/Main_LMA1_final_HDR.lz4" "C:/Users/Husk/After-Hours-WORKING-NO-BEES/After Hours (FIXED)/Assets/BakeryLightmaps/Main_LMA1_final.hdr" 1024 1
+Initializing D3D...
+Done
+Initializing D3D...
+Done
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFCA176835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFCA176835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9B75D730)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9B75D730)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9B75D730)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+[OVRPlugin][INFO] UnityOpenXR_SetClientVersion(1, 207, 0) called
+[OVRPlugin][INFO] ovrp_UnityOpenXR_HookGetInstanceProcAddr(00007FFCA176835A)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 00007FFCA176835A. All OpenXR API Entires unbound.
+[OVRPlugin][INFO] CompositorOpenXR::PreInitialize(activity = 0000000000000000, apiType = 0, preinitializeFlags=0x1)
+[OVRPlugin][INFO] Support Non-Oculus runtime: NO
+[OVRPlugin][INFO] Use Alpha Blend Factors: NO
+[OVRPlugin][INFO] RetryHMDConnection: YES
+[OVRPlugin][INFO]  -- Set xrGetInstanceProcAddr to external function pointer
+[OVRPlugin][INFO] Warning: xrGetInstanceProcAddr has already been set
+[OVRPlugin][INFO] Available Layers: (0)
+[OVRPlugin][INFO] Preinitialize: xrCreateInstance() failed
+[OVRPlugin][INFO] OVRPlugin 1.207.0 ... preinitialized
+[OVRPlugin][INFO] Func_xrGetInstanceProcAddr: override xrCreateInstance
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0D2390)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0D2390)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] Func_xrCreateInstance(0000012D9C0D2390)
+[OVRPlugin][INFO] OpenXR Loader Version 1.1.61
+[OVRPlugin][INFO] Unity Requested Extensions (14):
+[OVRPlugin][INFO] Available Extensions: (42)
+[OVRPlugin][INFO]  Name=XR_KHR_vulkan_enable SpecVersion=10
+[OVRPlugin][INFO]  Name=XR_KHR_D3D11_enable SpecVersion=11
+[OVRPlugin][INFO]  Name=XR_KHR_composition_layer_depth SpecVersion=6
+[OVRPlugin][INFO]  Name=XR_KHR_visibility_mask SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_interaction SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking SpecVersion=4
+[OVRPlugin][INFO]  Name=XR_EXT_hand_tracking_data_source SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_hand_joints_motion_range SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_local_floor SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_user_presence SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_FB_display_refresh_rate SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_META_performance_metrics SpecVersion=2
+[OVRPlugin][INFO]  Name=XR_META_recommended_layer_resolution SpecVersion=1
+[OVRPlugin][INFO]  Name=XR_EXT_debug_utils SpecVersion=5
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_D3D12_enable
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_performance_settings
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_color_scale_bias
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_aim
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_hand_tracking_capsules
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_microgestures
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_LOGITECH_mx_ink_stylus_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_color_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_swapchain_update_state_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_configuration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_foveation_vulkan
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_vulkan_swapchain_create_info
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_foveation_eye_tracked
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_composition_layer_image_layout
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cylinder
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_cube
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_composition_layer_equirect2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_KHR_convert_timespec_time
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_triangle_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_passthrough_keyboard_hands
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_color_lut
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_preferences
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_passthrough_layer_resumed_event
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_audio_device_guid
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_OCULUS_external_camera
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_common_events
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_render_model
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_keyboard_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_virtual_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_unextrapolated_poses
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_wide_motion_mode2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_scene
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_container
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_query
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_storage_batch
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_spatial_entity_user
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_headset_id
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_face_tracking2
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_face_tracking_visemes
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_eye_tracking_social
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_body_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_full_body
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_fidelity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_body_tracking_calibration
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_pro
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_touch_controller_proximity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_touch_controller_plus
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_MSFT_hand_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_amplitude_envelope
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_FB_haptic_pcm
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_haptic_parametric
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_eye_gaze_interaction
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_persistence
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_colocation_discovery
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_group_sharing
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_boundary_visibility
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_spatial_entity_room_mesh
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_hand_tracking_frequency_hint
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_simultaneous_hands_and_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_detached_controllers
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_depth
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_tracker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_dynamic_object_keyboard
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_entity
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_spatial_marker_tracking
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_spatial_entity_marker
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_META_environment_raycast
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXT_future
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX2_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX3_debug_utils_region_profiling
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_EXTX2_stationary_reference_space
+[OVRPlugin][INFO] Unavailable OpenXR extension: XR_METAX1_passthrough_camera_data
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnSessionDestroy(0)
+[OVRPlugin][INFO] ovrp_UnityOpenXR_OnInstanceDestroy(0)
+[OVRPlugin][INFO] [CompositorOpenXR::SetExternalXrGetInstanceProcAddr] xrGetInstanceProcAddr set to 0000000000000000. All OpenXR API Entires unbound.
