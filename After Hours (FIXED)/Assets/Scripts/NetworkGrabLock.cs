@@ -75,7 +75,20 @@ public class NetworkGrabLock : NetworkBehaviour
         if (player == null || player.leftHandTransform == null || player.rightHandTransform == null)
             return;
 
-        if (netIdentity != null && netIdentity.isOwned && !NetworkServer.active)
+        if (NetworkServer.active)
+        {
+            if (localHolding || netIdentity.connectionToClient != null)
+                return;
+
+            bool hostLeftHeld = EasyInputs.GetGripButtonDown(EasyHand.LeftHand);
+            bool hostRightHeld = EasyInputs.GetGripButtonDown(EasyHand.RightHand);
+            Transform hostHand = FindCandidateHand(player, hostLeftHeld, hostRightHeld);
+            if (hostHand != null)
+                BeginLocalHold(hostHand);
+            return;
+        }
+
+        if (netIdentity.isOwned)
         {
             if (localHolding)
                 return;
@@ -92,7 +105,7 @@ public class NetworkGrabLock : NetworkBehaviour
             return;
         }
 
-        if (NetworkServer.active || localHolding || awaitingAuthority || localRequestPending || locallyLocked)
+        if (localHolding || awaitingAuthority || localRequestPending || locallyLocked)
             return;
 
         bool leftPressed = EasyInputs.GetGripButtonDown(EasyHand.LeftHand);
@@ -124,6 +137,13 @@ public class NetworkGrabLock : NetworkBehaviour
 
         if (!netIdentity.AssignClientAuthority(sender))
             return;
+
+        if (localHolding)
+        {
+            localHolding = false;
+            heldHand = null;
+            locallyLocked = false;
+        }
 
         RpcSetGrabbed(true);
     }
@@ -163,7 +183,7 @@ public class NetworkGrabLock : NetworkBehaviour
         if (networkTransform != null)
         {
             networkTransform.enabled = true;
-            networkTransform.syncDirection = grabbed ? SyncDirection.ClientToServer : SyncDirection.ServerToClient;
+            networkTransform.syncDirection = grabbed && !NetworkServer.active ? SyncDirection.ClientToServer : SyncDirection.ServerToClient;
         }
     }
 
