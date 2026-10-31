@@ -11,20 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f370f974-2ec7-4faf-be59-86057496603d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.After Hours (FIXED)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.After Hours (FIXED)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BakeryLightmaps/Main_371857150_probes.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BakeryLightmaps/Main_371857150_probes.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Materials/SkyMorning.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Materials/SkyMorning.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/x64/Bakery/.uvgblog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/x64/Bakery/.uvgblog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mirror/Transports/EOSTransport/Scripts/EOSTransport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirror/Transports/EOSTransport/Scripts/EOSTransport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MirrorVR/Scripts/MirrorVRManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MirrorVR/Scripts/MirrorVRManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-10.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-10.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-11.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-11.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
